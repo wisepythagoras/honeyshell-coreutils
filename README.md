@@ -4,5 +4,5 @@ This repository is a plugin for simulating various [coreutils](https://www.gnu.o
 
 ## License
 
-Although the license for the source code is GNU GPL v3, I prohibit the use of the code herein to be used in training of any kind of AI model.
+Although the license for the source code is GNU GPL v3, I prohibit the use of the code herein for the training of any kind of AI model.
 
