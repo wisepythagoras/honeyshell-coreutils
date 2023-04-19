@@ -61,15 +61,6 @@ function ls_command(args, session)
 
     p, file = session.VFS:FindFile(raw_path)
 
-    -- bytesWriter = io.CreateWriter()
-	-- w = tabwriter.NewWriter(bytesWriter, 0, 0, 1, toBytes(' ')[1], tabwriter.AlignRight)
-	-- fmt.Fprintln(w, "-rwxr-xr-x\t1\troot root\t3131\tMay 19\t2017\t kerneloops")
-	-- fmt.Fprintln(w, "-rwxr-xr-x\t1\troot root\t1222\tMay 21\t2017\t screen-cleanup")
-	-- fmt.Fprintln(w, "-rwxr-xr-x\t1\troot root\t485\tAug 10\t2018\t whoopsie")
-    -- w:Flush()
-    -- session:TermWrite(bytesWriter:String())
-    -- fmt.Println('res', bytesWriter:String())
-
     if file ~= nil then
         permissions = file:CanAccess(session.User)
 
